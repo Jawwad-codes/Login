@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+   
+    background-color:black;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#quiz {
+    margin: 20px;
+}
+
+li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    max-width: 200px;
+    background-color: #000;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(146, 144, 144);
+    cursor: pointer;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.wrapper {
+    margin: auto;
+    margin-top: 10vh;
+    width: 80%;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+h3 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Media Queries */
+
+/* For desktop screens */
+@media only screen and (min-width: 1200px) {
+   .container {
+        max-width: 1000px;
+    }
+   .wrapper {
+        margin-top: 15vh;
+    }
+}
+
+/* For laptop screens */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+   .container {
+        max-width: 900px;
+    }
+   .wrapper {
+        margin-top: 12vh;
+        width: 50%;
+    }
+}
+
+/* For tablet screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   .container {
+        max-width: 700px;
+    }
+   .wrapper {
+        margin-top: 10vh;
+        padding: 20px;
+    }
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 767px) {
+   .container {
+        max-width: 500px;
+    }
+   .wrapper {
+        margin-top: 8vh;
+        padding: 15px;
+    }
+    button {
+        padding: 8px;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}   
